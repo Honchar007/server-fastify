@@ -58,6 +58,7 @@ mongoose
     console.error('Error connecting to MongoDB:', error);
   });
 
+const start = async () => {
   const fastify = require('fastify')();
 
   fastify.register(require('@fastify/multipart'));
@@ -774,3 +775,6 @@ mongoose
       console.log('Server is running on port 3000');
     }
   });
+}
+
+start();
