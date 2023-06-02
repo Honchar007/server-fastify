@@ -775,13 +775,13 @@ const start = async () => {
     }
   );
 
-  fastify.listen({ port: 3000 }, (error) => {
-    if (error) {
-      throw error;
-    } else {
-      console.log('Server is running on port 3000');
-    }
-  });
+  // fastify.listen({ port: 3000 }, (error) => {
+  //   if (error) {
+  //     throw error;
+  //   } else {
+  //     console.log('Server is running on port 3000');
+  //   }
+  // });
 }
 
 start();
