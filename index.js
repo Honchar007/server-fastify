@@ -47,7 +47,7 @@ const makeFilters = require('./shared/helpers/makeFilters');
 const BrandModel = require('./models/brand-model');
 const CarActionModel = require('./models/car-action-model');
 
-const connectionString = 'mongodb://127.0.0.1:27017/vroomvroom';
+const connectionString = 'mongodb://mongo:AtxiAngu122u1W3lArqD@containers-us-west-183.railway.app:7678';
 
 mongoose
   .connect(connectionString)
