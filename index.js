@@ -58,7 +58,6 @@ mongoose
     console.error('Error connecting to MongoDB:', error);
   });
 
-const start = async () => {
   const fastify = require('fastify')();
 
   fastify.register(require('@fastify/multipart'));
@@ -73,7 +72,7 @@ const start = async () => {
     root: path.join(__dirname, './uploads'),
   })
 
-  await fastify.register(require('@fastify/swagger'), {
+  fastify.register(require('@fastify/swagger'), {
     exposeRoute: true,
     exposeHeadRoute: false,
     swagger: {
@@ -782,6 +781,4 @@ const start = async () => {
   //     console.log('Server is running on port 3000');
   //   }
   // });
-}
 
-start();
