@@ -768,6 +768,13 @@ const start = async () => {
     }
   );
 
+  fastify.get(
+    '/hhhhhome',
+    async function (req, reply) {
+      return reply.send('in home');
+    }
+  );
+
   fastify.listen({ port: 3000 }, (error) => {
     if (error) {
       throw error;
