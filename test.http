@@ -1,0 +1,85 @@
+### Get all products
+GET http://localhost:3000/products HTTP/1.1
+
+### Get all products
+GET http://localhost:3000/products/1 HTTP/1.1
+
+### Add a product
+POST http://localhost:3000/product HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Anatolii",
+  "description": "Raditu",
+  "price": 12,
+  "category": "fruit"
+}
+
+### Post car
+POST http://localhost:3000/car HTTP/1.1
+Content-Type: application/json
+
+{
+  "ownerId": "646a836d9cf7585320e2f1d5",
+  "carPicsPath": [
+    ""
+  ],
+  "brand": "Daewoo",
+  "model": "Nubira",
+  "price": 1700,
+  "volume": 1.5,
+  "transmission": "Механіка",
+  "color": "Білий",
+  "year": 2002,
+  "town": "Миколаїв",
+  "odometr": 200,
+  "vincode": "XTA22133212",
+  "plates": "ВЕ8699ЕО",
+  "description": "Норм автомобіль",
+  "isAvtovukypSale": false,
+  "datePublication": "2023-05-22T21:34:56.789Z"
+}
+
+### Update car info
+PUT http://localhost:3000/carup/646bef061ab80c689469efe3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "carPicsPath": [
+    ""
+  ],
+  "brand": "Nissan",
+  "model": "Maxima",
+  "price": 1660,
+  "volume": 2.0,
+  "transmission": "Механіка",
+  "color": "Червоний",
+  "year": 2010,
+  "odometr": 100,
+  "vincode": "XTA2200033212",
+  "plates": "ВЕ6699ЕО",
+  "description": "Кращий авто"
+}
+
+
+### Get all available car checks
+GET http://localhost:3000/car-checks HTTP/1.1
+
+### Get all expert car checks
+http://localhost:3000/car-checks-expert/5345344324 HTTP/1.1
+
+### Get all own car checks
+http://localhost:3000/car-checks-own/a5345344324 HTTP/1.1
+
+### Login user
+GET http://127.0.0.1:3000/login/verbnyi200233gmail HTTP/1.1
+
+### Login user
+
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "verbnyi200233@gmail.com",
+  "password": "123412123"
+}

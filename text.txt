@@ -1,0 +1,39 @@
+
+{
+  "_id": {
+    "$oid": "646cb8709cf75853200b1eed"
+  },
+  "brand": "ZAZ",
+  "model": "Slavuta",
+  "town": "Миколаїв",
+  "link": "link",
+  "wantToCheckId": "5345344324",
+  "firstName": "Андрій",
+  "phone": "+380680884367",
+  "email": "andrii@gmail.com",
+  "checker": {
+    "checkerId": "5345344324",
+    "name": "Анатолій",
+    "phone": "+38456546456"
+  }
+}
+
+
+{
+  "_id": {
+    "$oid": "646ce0539cf75853200b1ef4"
+  },
+  "brand": "Daewoo",
+  "model": "Sens",
+  "town": "Миколаїв",
+  "link": "link",
+  "wantToCheckId": "a5345344324",
+  "firstName": "Андрій",
+  "phone": "+380680884367",
+  "email": "andrii@gmail.com",
+  "checker": {
+    "checkerId": "5345344324",
+    "name": "Анатолій",
+    "phone": "+38456546456"
+  }
+}
